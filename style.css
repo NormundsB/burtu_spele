@@ -1,0 +1,68 @@
+
+html {
+    font-family: avenir;
+    /* line-height: 1.5; */
+    margin-left: 2px;
+  }  
+
+
+h1{
+    
+    color: rebeccapurple;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: left;
+    /* margin-left: 15px; */
+    
+    
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+.navbar {
+    display: flex;
+    flex-wrap: wrap;
+    width: max-content;
+    gap: 1rem;
+    border: 4px solid rebeccapurple;
+    margin: 0em 0;
+    padding: 0.25em 1em;
+  }
+  .navbar li {
+    display: block; 
+  }
+  .navbar a {
+    text-decoration: none;
+    color: black;
+  }
+  .navbar a:hover {
+    text-decoration: underline;
+    text-decoration-color: orange;
+    text-decoration-thickness: 3px;
+    text-underline-offset: 6px;
+  }
+  
+  
+.btn {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    
+  }
+  .btn:hover {
+    background: rgba(47, 48, 97, 50%);
+  }
+  
