@@ -1,0 +1,83 @@
+html {
+    font-family: avenir;
+    /* line-height: 1.5; */
+    margin-left: 2px;
+  }  
+
+  
+  
+h1{   
+    color: rebeccapurple;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: left;
+    font-size: 3rem;
+    margin-top: -2px;
+    margin-bottom: -14px;
+    
+    
+    animation-duration: 3s;
+    animation-name: slidein;
+  }
+  
+  @keyframes slidein {
+    from {
+      margin-left: 100%;
+      width: 300%;
+    }
+  
+    to {
+      margin-left: 0%;
+      width: 100%;
+    }
+}
+
+#izvele {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    
+  }
+#izvele:hover {
+    background: rgba(47, 48, 97, 50%);
+  }
+
+  #generet {
+    color: #F7FFF7;
+    background: #2F3061;
+    text-decoration: none;
+    padding: 8px;
+    border-radius: 4px;
+    
+  }
+#generet:hover {
+    background: rgba(47, 48, 97, 50%);
+  }
+
+p.solid {
+    border-style: solid;
+    border-color: rebeccapurple;
+    border-width: 3px 0px  0px  0px;
+    width: 450px;
+}
+#vards {
+    color: rebeccapurple;
+    /* font-family: Arial, Helvetica, sans-serif; */
+    text-align: left;
+    font-size: 3rem;
+    margin-top: -2px;
+    margin-bottom: -14px;
+ 
+}
+#atbilde {
+    color: rebeccapurple;
+    background: white;
+    font-size: 2.3rem;
+    font-weight:bolder;
+    text-decoration: none;
+    padding: 3
+    8px;
+    border-radius: 4px;
+
+}
