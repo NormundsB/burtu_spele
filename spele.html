@@ -2,21 +2,42 @@
 <html lang="en">
 
 <head>
-    <link href="style.css" rel="stylesheet" />
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Spēle</title>
+    <link rel="stylesheet" href="static/css/style.css" />
+    <title>Spēle sākas!</title>
 </head>
 
 <body>
-    <form action="/action_page.php">
-        <label for="fname">First name:</label><br>
-        <input type="text" id="fname" name="fname" value="Jānis"><br>
-        <label for="lname">Last name:</label><br>
-        <input type="text" id="lname" name="lname" value="Egle"><br><br>
-    </form>
+    <ul>
+        <li><a href="noteikumi.html">Noteikumi</a></li>
+        <li><a href="rezultati.html">Rezultāti</a></li>
+    </ul>
 
+    <p>
+        <button onclick="Par_autoru()">Par autoru</button>
+    </p>
+
+    <hr />
+    <p>Izvēlies burtu skaitu:</p>
+
+    <select id='izvele'>
+        <option value="4">4 burti</option>
+        <option value="5">5 burti</option>
+        <option value="6">6 burti</option>
+        <option value="7">7 burti</option>
+        <option value="8">8 burti</option>
+        <option value="9">9 burti</option>
+        <option value="10">10 burti</option>
+    </select>
+
+    <button id="generet">Ģenerēt vārdu</button>
+
+    <div id="spele"></div>
+
+    <script src="static/js/parbaude.js"></script>
+    <script src="static/js/spele.js"></script>
 </body>
 
 </html>
