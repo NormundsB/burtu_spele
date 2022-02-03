@@ -31,7 +31,7 @@ h1{
     }
 }
 
-#izvele {
+/* #izvele {
     color: #F7FFF7;
     background: #2F3061;
     text-decoration: none;
@@ -41,9 +41,9 @@ h1{
   }
 #izvele:hover {
     background: rgba(47, 48, 97, 50%);
-  }
+  } */
 
-  #generet {
+#generet, #izvele {
     color: #F7FFF7;
     background: #2F3061;
     text-decoration: none;
@@ -51,7 +51,7 @@ h1{
     border-radius: 4px;
     
   }
-#generet:hover {
+#generet:hover ,#izvele:hover{
     background: rgba(47, 48, 97, 50%);
   }
 
@@ -76,8 +76,7 @@ p.solid {
     font-size: 2.3rem;
     font-weight:bolder;
     text-decoration: none;
-    padding: 3
-    8px;
+    padding: 8px;
     border-radius: 4px;
 
 }
