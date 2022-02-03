@@ -34,6 +34,7 @@ function generet() {
 
     vards = vardi[randomNr];
 
+
     document.getElementById("vards").innerHTML = sajaukt(vards);
 
 }
@@ -66,7 +67,7 @@ function spelesLaukums() {
 
 function parbaudit() {
     let atbilde = document.getElementById('atbilde').value;
-    if (atbilde === vards) {
+    if (atbilde === vards || toLowerCase(atbilde) == vards) {
         alert('Apsveicu pareizi!');
         generet();
     } else {
