@@ -67,8 +67,8 @@ function spelesLaukums() {
 
 function parbaudit() {
     let atbilde = document.getElementById('atbilde').value;
-    let atbilde = atbile.toLowerCase()
-    if (atbilde === vards) {
+    atbilde = atbilde.toLowerCase();
+    if (atbilde == vards) {
         alert('Apsveicu pareizi!');
         generet();
     } else {
