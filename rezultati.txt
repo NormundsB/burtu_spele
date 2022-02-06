@@ -1,0 +1,1 @@
+[{"punkti": 970, "vards": "Zuze"},{"punkti": 910, "vards": "Antons"}]
