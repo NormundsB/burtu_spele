@@ -5,7 +5,7 @@ html {
   }  
 
   
-h1{   
+h1 {   
     color: rebeccapurple;
     /* font-family: Arial, Helvetica, sans-serif; */
     text-align: left;
@@ -33,7 +33,7 @@ h1{
 
 #generet, #izvele {
     color: #F7FFF7;
-    background: #2F3061;
+    background: rebeccapurple;
     text-decoration: none;
     padding: 8px;
     border-radius: 4px;
@@ -64,7 +64,40 @@ p.solid {
     font-size: 2.3rem;
     font-weight:bolder;
     text-decoration: none;
-    padding: 8px;
+    padding: 4px 8px;
     border-radius: 4px;
 
 }
+.navbar {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  gap: 1rem;
+  padding: 0.25em 0;
+}
+.navbar li {
+  display: block; 
+}
+.navbar a {
+  text-decoration: none;
+  color: rebeccapurple;
+}
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+ 
+.btn {
+  color: #F7FFF7;
+  background: rebeccapurple;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+  
+}
+.btn:hover {
+  background: rgba(47, 48, 97, 50%);
+}
+
