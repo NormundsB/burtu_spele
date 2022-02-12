@@ -1,4 +1,5 @@
 let vards = "";
+let vards2 = "";
 let vardi4 = ['koks', 'kāja', 'labs', 'lini', 'logs', 'daba', 'dēls', 'egle', 'ezis', 'gads'];
 let vardi5 = ['kaķis', 'kakls', 'kalns', 'kauls', 'kļava', 'krūms', 'lācis', 'laiks', 'laime', 'laiva', 'lapsa', 'lauks', 'liepa', 'dzīve', 'ezers'];
 let vardi6 = ['karogs', 'kleita', 'kalējs', 'komats', 'krekls', 'krēsls', 'kurmis', 'kurpes', 'krūtis', 'labība', 'lietus', 'nedēļa', 'laipns']
@@ -34,8 +35,14 @@ function generet() {
 
     vards = vardi[randomNr];
 
+    vards2 = sajaukt(vards);
 
-    document.getElementById("vards").innerHTML = sajaukt(vards);
+    while (vards2 == vards) {
+        vards2 = sajaukt(vards);
+    }
+    // vards = vards2;
+
+    document.getElementById("vards").innerHTML = vards2;
 
 }
 
