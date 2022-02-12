@@ -10,83 +10,86 @@
 </head>
 
 <body>
-    <h1>
-        <a href="index.html">
-            <!-- Šeit lai varētu atgriezties! -->
-            Burtu Spēle
-        </a>
-    </h1>
-    <h2>
-        <nav role="navigation" aria-label="main menu">
-            <ul class="navbar">
-                <li><a class="active" href="">Par spēli</a></li>
-                <li><a href="">Noteikumi</a></li>
-                <li><a href="">Rekordisti</a></li>
-                <li><a href="">Kontakti</a></li>
-            </ul>
-        </nav>
-    </h2>
-    <p> Šī spēle ir izveidota, lai attīstītu domāšanu, un paplašinātu <br>
-        spēlētājam zināmo vārdu krājumu ar jauniem vārdiem.<br>
-        Spēlē izmantojamo vārdu izvēle šobrīd ir haotiska, bet to<br>
-        ir iespējams piemērot izglītības programai piem.
-    </p>
-    <ul>
-        <li>Literatūrā - rakstnieki, darbu nosaukumi</li>
-        <li>Ķīmijā - elementu nosaukumi un to savienojumi</li>
-        <li>Svešvalodā - vārdi pēc to nozīmes</li>
-        <li>utt.</li>
-    </ul>
-    <p>
-        Lai piemērotu spēli konkrētām vajadzībām - skolotājam, <br> vai spēles
-        īpašniekam ir jānomaina CSV ar nepieciešamo. <br>
-        CSV fails satur sekojošus laukus:
-    </p>
-    <ol>
-        <li>Vārds - tāds kādu to jātmin</li>
-        <li>Vārda garums - burtu skaits vārdā</li>
-        <li>Hint - īsa palīdzība, kura pieskaita spēles laikam 1 min.</li>
-        <li>Vārda pilnā nozīme</li>
-    </ol>
-    Lai sāktu spēli nospied šo pogu:
-    <a class="btn" href="spele.html" target="_blank">Sākt spēli</a>
-    <p class="solid"></p>
-
-    <p>
-        <b>Noteikumi:</b><br>
-        Spēlē piedalās viens cilvēks, vai vairāki cilvēki - secīgi.<br>
-        Spēles laiks noteikts 10 min.<br>
-        Lai sāktu spēli:
-    <ol>
-        <li>Jānospiež poga <b>Sākt spēli</b></li>
-        <li>Jāizvēlas grūtības pakāpe - cik būs burti <br>minamajam vārdam</li>
-        <li>Jāieraksta atminētais vārds: </li>
+    <div class="wrapper">
+        <h1>
+            <a href="index.html">
+                <!-- Šeit lai varētu atgriezties! -->
+                Burtu Spēle
+            </a>
+        </h1>
+        <h2>
+            <nav role="navigation" aria-label="main menu">
+                <ul class="navbar">
+                    <li><a class="active" href="">Par spēli</a></li>
+                    <li><a href="">Noteikumi</a></li>
+                    <li><a href="">Rekordisti</a></li>
+                    <li><a href="">Kontakti</a></li>
+                </ul>
+            </nav>
+        </h2>
+        <p> Šī spēle ir izveidota, lai attīstītu domāšanu, un paplašinātu <br>
+            spēlētājam zināmo vārdu krājumu ar jauniem vārdiem.<br>
+            Spēlē izmantojamo vārdu izvēle šobrīd ir haotiska, bet to<br>
+            ir iespējams piemērot izglītības programai piem.
+        </p>
         <ul>
-            <li>ja tas nav pareizs, tad jāmēģina vēlreiz </li>
-            <li>ja neizdodas, tad var izmantot <b>Hint</b>-Palīdzība<br>
-                šī iespēja samazinās atvēlēto laiku par 1 min. </li>
+            <li>Literatūrā - rakstnieki, darbu nosaukumi</li>
+            <li>Ķīmijā - elementu nosaukumi un to savienojumi</li>
+            <li>Svešvalodā - vārdi pēc to nozīmes</li>
+            <li>utt.</li>
         </ul>
-        <li>Spēles laikam beidzoties ierakstiet savu vārdu,<br>
-            vai <i>nickname</i> rezultātu tabulā</li>
-        <li>Ar saviem sasniegumiem variet iepazīties sadaļā<br>
-            <b>Rekordisti</b>
-        </li>
-        <li>Spēlējiet vēlreiz!</li>
-    </ol>
-    <p>Nospied pogu:
-        <a class="btn" href="spele.html">Sākt spēli</a>
-        <a class="btn" href="" onclick="scrollWin()">⇡ Uz sākumu</a>
+        <p>
+            Lai piemērotu spēli konkrētām vajadzībām - skolotājam, <br> vai spēles
+            īpašniekam ir jānomaina CSV ar nepieciešamo. <br>
+            CSV fails satur sekojošus laukus:
+        </p>
+        <ol>
+            <li>Vārds - tāds kādu to jātmin</li>
+            <li>Vārda garums - burtu skaits vārdā</li>
+            <li>Hint - īsa palīdzība, kura pieskaita spēles laikam 1 min.</li>
+            <li>Vārda pilnā nozīme</li>
+        </ol>
+        Lai sāktu spēli nospied šo pogu:
+        <a class="btn" href="spele.html" target="_blank">Sākt spēli</a>
+        <p class="solid"></p>
 
-    </p>
-    <p class="solid"></p>
+        <p>
+            <b>Noteikumi:</b><br>
+            Spēlē piedalās viens cilvēks, vai vairāki cilvēki - secīgi.<br>
+            Spēles laiks noteikts 10 min.<br>
+            Lai sāktu spēli:
+        <ol>
+            <li>Jānospiež poga <b>Sākt spēli</b></li>
+            <li>Jāizvēlas grūtības pakāpe - cik būs burti <br>minamajam vārdam</li>
+            <li>Jāieraksta atminētais vārds: </li>
+            <ul>
+                <li>ja tas nav pareizs, tad jāmēģina vēlreiz </li>
+                <li>ja neizdodas, tad var izmantot <b>Hint</b>-Palīdzība<br>
+                    šī iespēja samazinās atvēlēto laiku par 1 min. </li>
+            </ul>
+            <li>Spēles laikam beidzoties ierakstiet savu vārdu,<br>
+                vai <i>nickname</i> rezultātu tabulā</li>
+            <li>Ar saviem sasniegumiem variet iepazīties sadaļā<br>
+                <b>Rekordisti</b>
+            </li>
+            <li>Spēlējiet vēlreiz!</li>
+        </ol>
+        <p>Nospied pogu:
+            <a class="btn" href="spele.html">Sākt spēli</a>
+            <a class="btn" href="" onclick="scrollWin()">⇡ Uz sākumu</a>
 
-    </p>
-    <script>
-        function scrollWin() {
-            window.scrollTo(0, 200);
-        }
-    </script>
-    <script src="static/js/parbaude.js"></script>
+        </p>
+        <p class="solid"></p>
+
+        </p>
+        <script>
+            function scrollWin() {
+                window.scrollTo(0, 200);
+            }
+        </script>
+        <script src="static/js/parbaude.js">
+        </script>
+    </div>
 </body>
 <footer>
     <h3>Šeit būs informācija par Start-it</h3>
