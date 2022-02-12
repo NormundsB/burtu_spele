@@ -37,7 +37,7 @@ function generet() {
 
     vards = vardi[randomNr];
 
-    while (ieprVards == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
+    while (ieprVards == vards && ieprVards2 == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
         randomNr = getRandomInt(vardi.length - 1);
         vards = vardi[randomNr];;
     }
@@ -85,7 +85,8 @@ function parbaudit() {
     vards = vards.toLowerCase();
     if (atbilde == vards) {
         alert('Apsveicu pareizi!');
-        ieprVards = vards
+        ieprVards2 = ieprVards;
+        ieprVards = vards;
         generet();
     } else {
         alert('Mēģini vēlreiz');
