@@ -8,6 +8,8 @@ let vardi8 = ['kukainis', 'liktenis', 'pīlādzis', 'taurenis', 'uzdevums', 'vec
 let vardi9 = ['gliemezis', 'dzirnavas', 'draudzība', 'dzejnieks', 'biezpiens', 'mīlestība', 'patiesība', 'pavasaris', 'skolotājs', 'zvejnieks', 'zvirbulis']
 let vardi10 = ['kartupelis', 'lakstīgala', 'varavīksne', 'basketbols', 'rakstnieks', 'Lieldienas', 'strēlnieks', 'valodnieks'];
 
+let ieprVards = "";
+
 function generet() {
     let select = document.getElementById('izvele');
     let izvele = select.options[select.selectedIndex].value;
@@ -35,12 +37,17 @@ function generet() {
 
     vards = vardi[randomNr];
 
+    while (ieprVards == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
+        randomNr = getRandomInt(vardi.length - 1);
+        vards = vardi[randomNr];;
+    }
+
     vards2 = sajaukt(vards);
 
-    while (vards2 == vards) {
+    while (vards2 == vards) { // Ja sajauktais vārds sakrīt ar minamo vārdu
         vards2 = sajaukt(vards);
     }
-    // vards = vards2;
+
 
     document.getElementById("vards").innerHTML = vards2;
 
@@ -78,6 +85,7 @@ function parbaudit() {
     vards = vards.toLowerCase();
     if (atbilde == vards) {
         alert('Apsveicu pareizi!');
+        ieprVards = vards
         generet();
     } else {
         alert('Mēģini vēlreiz');
