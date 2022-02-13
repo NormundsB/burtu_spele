@@ -77,30 +77,47 @@
             </li>
             <li>Spēlējiet vēlreiz!</li>
         </ol>
+        <p class="solid"></p>
+        <div class="content">
+            <h3 class="virsraksts">Info par spēlētāju:</h3>
+
+            Vārds: <input id="vards" />
+            <br />
+            Vecums: <input id="vecums" />
+            <br />
+            Reģions:
+            <select id="izvele">
+                <option value="Vidzeme">Vidzeme</option>
+                <option value="Latgale">Latgale</option>
+                <option value="Kurzeme">Kurzeme</option>
+                <option value="Sēlija">Sēlija</option>
+            </select>
+            <a class="btn" href="spele.html">Sākt spēli</a>
+        </div>
+
         <p>Nospied pogu:
             <a class="btn" href="spele.html">Sākt spēli</a>
             <a class="btn" href="" onclick="scrollWin()">⇡ Uz sākumu</a>
-
         </p>
         <p class="solid"></p>
 
-        </p>
-        <script>
-            function scrollWin() {
-                window.scrollTo(0, 200);
-            }
-        </script>
-        <script src="static/js/parbaude.js">
-        </script>
 
         <h3 id="section3">Par Start (IT) ...</h3>
-        <a id="mans">IT Izglītības fonda projekta Start(IT) <br>mērķis ir attīstīt digitālās prasmes
-            Latvijā</a>
+        <div id="mans">IT Izglītības fonda projekta Start(IT) <br>mērķis ir attīstīt digitālās prasmes
+            Latvijā</div>
         <h3 id="section4">Kontakti...</h3>
-        <a id="mans">Jautājumiem un sadarbības piedāvājumiem<br>
+        <div id="mans">Jautājumiem un sadarbības piedāvājumiem<br>
             E-pasts: fonds@startit.lv
-        </a>
+        </div>
+
     </div>
+    <script>
+        function scrollWin() {
+            window.scrollTo(0, 200);
+        }
+    </script>
+    <!-- <script src="static/js/parbaude.js"> -->
+    </script>
 
 </body>
 <footer>
