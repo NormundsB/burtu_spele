@@ -9,6 +9,8 @@ let vardi9 = ['gliemezis', 'dzirnavas', 'draudzība', 'dzejnieks', 'biezpiens', 
 let vardi10 = ['kartupelis', 'lakstīgala', 'varavīksne', 'basketbols', 'rakstnieks', 'Lieldienas', 'strēlnieks', 'valodnieks'];
 
 let ieprVards = "";
+let ieprVards2 = "";
+let ieprVards3 = "";
 
 function generet() {
     let select = document.getElementById('izvele');
@@ -30,14 +32,14 @@ function generet() {
     } else if (izvele == 10) {
         vardi = vardi10;
     }
-
+    // 
     spelesLaukums();
 
     let randomNr = getRandomInt(vardi.length - 1);
 
     vards = vardi[randomNr];
 
-    while (ieprVards == vards && ieprVards2 == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
+    while (ieprVards == vards && ieprVards2 == vards && ieprVards3 == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
         randomNr = getRandomInt(vardi.length - 1);
         vards = vardi[randomNr];;
     }
@@ -85,6 +87,7 @@ function parbaudit() {
     vards = vards.toLowerCase();
     if (atbilde == vards) {
         alert('Apsveicu pareizi!');
+        ieprVards3 = ieprVards2
         ieprVards2 = ieprVards;
         ieprVards = vards;
         generet();
