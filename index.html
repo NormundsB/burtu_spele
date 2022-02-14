@@ -52,8 +52,9 @@
             <li>Hint - īsa palīdzība, kura pieskaita spēles laikam 1 min.</li>
             <li>Vārda pilnā nozīme</li>
         </ol>
-        Lai sāktu spēli nospied šo pogu:
-        <a class="btn" href="spele.html" target="_blank">Sākt spēli</a>
+        <h3>Lai sāktu spēli nospied šo pogu:
+            <a class="btn" href="#section5" target="_blank">Reģistrēties</a>
+        </h3>
         <p class="solid"></p>
 
         <p>
@@ -79,29 +80,19 @@
         </ol>
         <p class="solid"></p>
         <div class="content">
-            <h3 class="virsraksts">Info par spēlētāju:</h3>
+            <h3 id="section5">Lai sāktu spēlēt ievadi savu vārdu, vai <i>nickname</i>:</h3>
+            <h3>Vārds (nick) : <input id="niks" /> <a class="btn" onclick="saktSpeli()">Sākt spēli</a></h3>
 
-            Vārds: <input id="vards" />
-            <br />
-            Vecums: <input id="vecums" />
-            <br />
-            Reģions:
-            <select id="izvele">
-                <option value="Vidzeme">Vidzeme</option>
-                <option value="Latgale">Latgale</option>
-                <option value="Kurzeme">Kurzeme</option>
-                <option value="Sēlija">Sēlija</option>
-            </select>
-            <a class="btn" href="spele.html">Sākt spēli</a>
+            <p class="thin"></p>
+
         </div>
-
-        <p>Nospied pogu:
-            <a class="btn" href="spele.html">Sākt spēli</a>
+        <h3>Lai atgrieztos uz lapas augšu,</h3>
+        <h3>nospied pogu:
             <a class="btn" href="" onclick="scrollWin()">⇡ Uz sākumu</a>
-        </p>
+        </h3>
+
+
         <p class="solid"></p>
-
-
         <h3 id="section3">Par Start (IT) ...</h3>
         <div id="mans">IT Izglītības fonda projekta Start(IT) <br>mērķis ir attīstīt digitālās prasmes
             Latvijā</div>
@@ -115,9 +106,25 @@
         function scrollWin() {
             window.scrollTo(0, 200);
         }
+
+
+        function saktSpeli() {
+            let niks = document.querySelector("#niks").value;
+            console.log(niks)
+            if (niks == "") {
+                alert("Ievadi vārdu, vai nickname!")
+            }
+
+            else {
+
+                window.location = "spele.html#" + niks
+            }
+        } //beidzas saktSpeli()
+
+
     </script>
     <!-- <script src="static/js/parbaude.js"> -->
-    </script>
+
 
 </body>
 <footer>

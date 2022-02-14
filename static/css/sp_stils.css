@@ -29,7 +29,9 @@ h1 {
       width: 100%;
     }
 }
-
+h3 {
+  color: rebeccapurple;
+}
 
 #generet, #izvele {
     color: #F7FFF7;
@@ -43,11 +45,17 @@ h1 {
     background: rgba(47, 48, 97, 50%);
   }
 
-p.solid {
-    border-style: solid;
+  p.solid {
+    border-style: groove;
     border-color: rebeccapurple;
-    border-width: 3px 0px  0px  0px;
-    width: 450px;
+    border-width: 2px 0px  0px  0px;
+    width: 525px;
+}
+p.thin {
+  border-style:dashed;
+  border-color: rebeccapurple;
+  border-width: 2px 0px  0px  0px;
+  width: 525px;
 }
 #vards {
     color: rebeccapurple;
@@ -93,7 +101,7 @@ p.solid {
   color: #F7FFF7;
   background: rebeccapurple;
   text-decoration: none;
-  padding: 6px 10px;
+  padding: 4px 8px;
   border-radius: 4px;
   
 }
