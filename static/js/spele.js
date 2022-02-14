@@ -1,3 +1,14 @@
+let adrese = window.location.hash
+adrese = decodeURI(adrese)
+adrese = adrese.replace('#', "")
+adrese = adrese.split(",")
+let niks = adrese[0]
+
+document.querySelector(".virsraksts").innerHTML = niks + " - spēle sākas!"
+console.log(adrese)
+
+
+
 let vards = "";
 let vards2 = "";
 let vardi4 = ['koks', 'kāja', 'labs', 'lini', 'logs', 'daba', 'dēls', 'egle', 'ezis', 'gads', 'gods', 'govs', 'dēle', "kaza", "maza", "ķeza", "roka", "alus", "māsa", "māte", "tēvs", "kaps", "āzis", "pupa", "odze"];
