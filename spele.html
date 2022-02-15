@@ -10,8 +10,11 @@
 </head>
 
 <body>
-    <h1 class="virsraksts">Spēle sākas!</h1>
-    <!-- <ul>
+
+    <body onload="startTime()"></body>
+    <div class="wrapper">
+        <h1 class="virsraksts">Spēle sākas!</h1>
+        <!-- <ul>
         <li><a href="noteikumi.html">Noteikumi</a></li>
         <li><a href="rezultati.html">Rezultāti</a></li>
     </ul>
@@ -20,25 +23,54 @@
         <button onclick="Par_autoru()">Par autoru</button>
     </p> -->
 
-    <p class="solid"></p>
-    <h3>Izvēlies burtu skaitu:
-        <select id='izvele'>
-            <option value="4">4 burti</option>
-            <option value="5">5 burti</option>
-            <option value="6">6 burti</option>
-            <option value="7">7 burti</option>
-            <option value="8">8 burti</option>
-            <option value="9">9 burti</option>
-            <option value="10">10 burti</option>
-        </select>
+        <p class="solid"></p>
 
-        <button id="generet">Ģenerēt vārdu</button>
-    </h3>
-    <p class="solid"></p>
-    <div id="spele"></div>
+        <h3><a id="pulkstenis"></a> <a id="taimeris" onclick="setTimeout(speleBeidzas, 30000);">Spēlēt ar laika
+                limitu!</a>
+            <p>The task is 35% complete <progress max="100" value="35"></progress></p>
 
-    <script src="static/js/parbaude.js"></script>
-    <script src="static/js/spele.js"></script>
+        </h3>
+        <h3>Izvēlies burtu skaitu:
+            <select id='izvele'>
+                <option value="4">4 burti</option>
+                <option value="5">5 burti</option>
+                <option value="6">6 burti</option>
+                <option value="7">7 burti</option>
+                <option value="8">8 burti</option>
+                <option value="9">9 burti</option>
+                <option value="10">10 burti</option>
+            </select>
+
+            <a id="generet">Ģenerēt vārdu</a>
+        </h3>
+        <p class="solid"></p>
+        <div id="spele"></div>
+
+        <script src="static/js/parbaude.js"></script>
+        <script src="static/js/spele.js"></script>
+        <script>
+            function speleBeidzas() {
+                alert('Tava spēle ir beigusies!');
+            }
+        </script>
+        <script>
+            function startTime() {
+                const today = new Date();
+                let h = today.getHours();
+                let m = today.getMinutes();
+                let s = today.getSeconds();
+                m = checkTime(m);
+                s = checkTime(s);
+                document.getElementById('pulkstenis').innerHTML = h + ":" + m + ":" + s;
+                setTimeout(startTime, 1000);
+            }
+
+            function checkTime(i) {
+                if (i < 10) { i = "0" + i };  // add zero in front of numbers < 10
+                return i;
+            }
+        </script>
+    </div>
 </body>
 <footer>
     <h2>
