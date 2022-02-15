@@ -12,13 +12,14 @@ console.log(adrese)
 
 let vards = "";
 let vards2 = "";
-let vardi4 = ['koks', 'kāja', 'labs', 'lini', 'logs', 'daba', 'dēls', 'egle', 'ezis', 'gads', 'gods', 'govs', 'dēle', "kaza", "maza", "ķeza", "roka", "alus", "māsa", "māte", "tēvs", "kaps", "āzis", "pupa", "odze"];
-let vardi5 = ['kaķis', 'kakls', 'kalns', 'kauls', 'kļava', 'krūms', 'lācis', 'laiks', 'laime', 'laiva', 'lapsa', 'lauks', 'liepa', 'dzīve', 'ezers', 'šķēle', "žurka", "burka", "biete"];
-let vardi6 = ['karogs', 'kleita', 'kalējs', 'komats', 'krekls', 'krēsls', 'kurmis', 'kurpes', 'krūtis', 'labība', 'lietus', 'nedēļa', 'laipns', "dibens", "zibens", "klaips"]
-let vardi7 = ['kadiķis', 'Kurzeme', 'Latgale', 'Vidzeme', 'Zemgale', 'nākotne', 'pasaule', 'pirksts', 'pērkons', 'pilsēta', 'rietumi', 'smiltis', 'sudrabs']
-let vardi8 = ['kukainis', 'liktenis', 'pīlādzis', 'taurenis', 'uzdevums', 'vecāmāte', 'zīdainis', 'zemnieks', 'zvaigzne', 'folklora', 'dzimtene', 'dzeltens']
-let vardi9 = ['gliemezis', 'dzirnavas', 'draudzība', 'dzejnieks', 'biezpiens', 'mīlestība', 'patiesība', 'pavasaris', 'skolotājs', 'zvejnieks', 'zvirbulis']
-let vardi10 = ['kartupelis', 'lakstīgala', 'varavīksne', 'basketbols', 'rakstnieks', 'Lieldienas', 'strēlnieks', 'valodnieks'];
+
+// let vardi4 = ['koks', 'kāja', 'labs', 'lini', 'logs', 'daba', 'dēls', 'egle', 'ezis', 'gads', 'gods', 'govs', 'dēle', "kaza", "maza", "ķeza", "roka", "alus", "māsa", "māte", "tēvs", "kaps", "āzis", "pupa", "odze"];
+// let vardi5 = ['kaķis', 'kakls', 'kalns', 'kauls', 'kļava', 'krūms', 'lācis', 'laiks', 'laime', 'laiva', 'lapsa', 'lauks', 'liepa', 'dzīve', 'ezers', 'šķēle', "žurka", "burka", "biete"];
+// let vardi6 = ['karogs', 'kleita', 'kalējs', 'komats', 'krekls', 'krēsls', 'kurmis', 'kurpes', 'krūtis', 'labība', 'lietus', 'nedēļa', 'laipns', "dibens", "zibens", "klaips"]
+// let vardi7 = ['kadiķis', 'Kurzeme', 'Latgale', 'Vidzeme', 'Zemgale', 'nākotne', 'pasaule', 'pirksts', 'pērkons', 'pilsēta', 'rietumi', 'smiltis', 'sudrabs']
+// let vardi8 = ['kukainis', 'liktenis', 'pīlādzis', 'taurenis', 'uzdevums', 'vecāmāte', 'zīdainis', 'zemnieks', 'zvaigzne', 'folklora', 'dzimtene', 'dzeltens']
+// let vardi9 = ['gliemezis', 'dzirnavas', 'draudzība', 'dzejnieks', 'biezpiens', 'mīlestība', 'patiesība', 'pavasaris', 'skolotājs', 'zvejnieks', 'zvirbulis']
+// let vardi10 = ['kartupelis', 'lakstīgala', 'varavīksne', 'basketbols', 'rakstnieks', 'Lieldienas', 'strēlnieks', 'valodnieks'];
 
 let ieprVards = "";
 let ieprVards2 = "";
@@ -59,6 +60,17 @@ function generet() {
         console.log(datiJson);
         return datiJson
     }
+    async function raditDatus() {
+        let vardi = await vardiPecGaruma();
+        console.log(vardi);
+        for (let i = 0; i < vardi.length; i++) {
+            //console.log(produktiKopa[i]["title"])
+            console.log(vietasLv[1]);
+
+        }
+    }
+
+    raditDatus()
 
 
 
