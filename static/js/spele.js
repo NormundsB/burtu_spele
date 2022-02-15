@@ -24,37 +24,38 @@ let ieprVards = "";
 let ieprVards2 = "";
 let ieprVards3 = "";
 let failaNosaukums = "";
-
+let fvardi = "";
 function generet() {
     let select = document.getElementById('izvele');
     let izvele = select.options[select.selectedIndex].value;
     let vardi = [];
 
     if (izvele == 4) {
-        vardi = vardi4;
+        fvardi = "vardi4";
     } else if (izvele == 5) {
-        vardi = vardi5;
+        fvardi = "vardi5";
     } else if (izvele == 6) {
-        vardi = vardi6;
+        fvardi = "vardi6";
     } else if (izvele == 7) {
-        vardi = vardi7;
+        fvardi = "vardi7";
     } else if (izvele == 8) {
-        vardi = vardi8;
+        fvardi = "vardi8";
     } else if (izvele == 9) {
-        vardi = vardi9;
+        fvardi = "vardi9";
     } else if (izvele == 10) {
-        vardi = vardi10;
+        fvardi = "vardi10";
     }
     // 
 
 
     // Šeit ielādējam datus no vardu faila
 
-    failaNosaukums = "https://normundsb.github.io/apiUnFetch/" + vardi + ".json"
+    failaNosaukums = "https://normundsb.github.io/apiUnFetch/" + fvardi + ".json"
 
     async function vardPecGaruma() {
         let datiNoApi = await fetch(failaNosaukums);
         let datiJson = await datiNoApi.json();
+        console.log(failaNosaukums)
         console.log(datiJson);
         return datiJson
     }
