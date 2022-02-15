@@ -89,7 +89,7 @@ function getRandomInt(n) {
 function spelesLaukums() {
     let laukums = document.getElementById('spele');
 
-    laukums.innerHTML = "<h2>Sajauktais vārds:<div id='vards'></div></h2><input type='text' id='atbilde'/><br><br><h3><a id='parb'' onclick = 'parbaudit()' > Pārbaudīt</a ></h3>";
+    laukums.innerHTML = "<h2>Sajauktais vārds:<div id='vards'></div></h2><input type='text' id='atbilde'/><br><h3><a id='parb'' onclick = 'parbaudit()' > Pārbaudīt</a ></h3>";
 
 }
 
