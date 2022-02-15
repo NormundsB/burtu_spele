@@ -81,11 +81,11 @@ function generet() {
         return datiJson
     }
     async function raditDatus() {
-        let jvardi = await vardiPecGaruma();
+        let jvards = await vardiPecGaruma();
         console.log(jvardi);
-        for (let i = 0; i < jvardi.length; i++) {
-            console.log(jvardi[i]["title"])
-            //     console.log(vietasLv[1]);
+        for (let i = 0; i < jvards.length; i++) {
+            console.log(jvards[i]["title"])
+            //     console.log(jvards[1]);
         }
     }
 
