@@ -63,14 +63,14 @@ function generet() {
     async function raditDatus() {
         let vardi = await vardiPecGaruma();
         console.log(vardi);
-        for (let i = 0; i < vardi.length; i++) {
-            //console.log(produktiKopa[i]["title"])
-            console.log(vietasLv[1]);
+        // for (let i = 0; i < vardi.length; i++) {
+        //     //console.log(produktiKopa[i]["title"])
+        //     console.log(vietasLv[1]);
 
-        }
     }
 
-    raditDatus()
+
+    raditDatus();
 
 
 
