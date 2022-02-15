@@ -4,6 +4,7 @@ adrese = adrese.replace('#', "")
 adrese = adrese.split(",")
 let niks = adrese[0]
 
+
 document.querySelector(".virsraksts").innerHTML = niks + " - spēle sākas!"
 console.log(adrese)
 
@@ -22,6 +23,7 @@ let vardi10 = ['kartupelis', 'lakstīgala', 'varavīksne', 'basketbols', 'rakstn
 let ieprVards = "";
 let ieprVards2 = "";
 let ieprVards3 = "";
+let failaNosaukums = "";
 
 function generet() {
     let select = document.getElementById('izvele');
@@ -44,6 +46,27 @@ function generet() {
         vardi = vardi10;
     }
     // 
+
+
+    // Šeit ielādējam datus no vardu faila
+
+    failaNosaukums = "https://normundsb.github.io/apiUnFetch/" + vardi + ".json"
+
+    async function vardPecGaruma() {
+        let datiNoApi = await fetch(failaNosaukums);
+        let datiJson = await datiNoApi.json();
+        console.log(datiJson);
+        return datiJson
+    }
+
+
+
+
+
+
+
+
+    // Šeit beidzas ielāde
     spelesLaukums();
 
     let randomNr = getRandomInt(vardi.length - 1);
