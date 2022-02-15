@@ -81,7 +81,7 @@ function generet() {
         return datiJson
     }
     async function raditDatus() {
-        let jvards = await vardiPecGaruma();
+        let jvards = await vardPecGaruma();
         console.log(jvardi);
         for (let i = 0; i < jvards.length; i++) {
             console.log(jvards[i]["title"])
