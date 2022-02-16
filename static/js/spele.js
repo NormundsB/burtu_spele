@@ -71,7 +71,7 @@ function generet() {
 
     // Šeit ielādējam datus no vardu faila
 
-    failaNosaukums = "https://normundsb.github.io/apiUnFetch/" + fvardi + ".json"
+    failaNosaukums = "https://normundsb.github.io/burtu_spele/" + fvardi + ".json"
 
     async function vardPecGaruma() {
         let datiNoApi = await fetch(failaNosaukums);
