@@ -1,6 +1,6 @@
 let adrese = window.location.hash
 adrese = decodeURI(adrese)
-adrese = adrese.replace('#', "")
+adrese = adrese.replace("vards=", ",")
 adrese = adrese.split(",")
 let niks = adrese[0]
 
