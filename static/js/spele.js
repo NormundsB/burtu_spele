@@ -63,7 +63,7 @@ function generet() {
 
     // Šeit ielādējam datus no vardu faila
 
-    failaNosaukums = "https://normundsb.github.io/burtu_spele/" + fvardi + ".json";
+    failaNosaukums = "https://normundsb.github.io/burtu_spele/vardi" + izvele + ".json";
     console.log(failaNosaukums)
 
     async function vardPecGaruma() {
