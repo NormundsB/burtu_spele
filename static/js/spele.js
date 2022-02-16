@@ -68,28 +68,28 @@ function generet() {
 
     // 
 
-
+    fvardi = "vardi4";
     // Šeit ielādējam datus no vardu faila
 
-    failaNosaukums = "https://normundsb.github.io/burtu_spele/" + fvardi + ".json"
+    let failaNosaukums = "https://normundsb.github.io/burtu_spele/" + fvardi + ".json"
 
-    async function vardPecGaruma() {
-        let datiNoApi = await fetch(failaNosaukums);
-        let datiJson = await datiNoApi.json();
-        console.log(failaNosaukums)
-        console.log(datiJson);
-        return datiJson
-    }
-    async function raditDatus() {
-        let jvards = await vardPecGaruma();
-        console.log(jvardi);
-        for (let i = 0; i < jvards.length; i++) {
-            console.log(jvards[i]["title"])
-            //     console.log(jvards[1]);
-        }
-    }
+    // async function vardPecGaruma() {
+    let datiNoApi = await fetch(failaNosaukums);
+    let datiJson = await datiNoApi.json();
+    console.log(failaNosaukums)
+    console.log(datiJson);
+    // return datiJson
+    // }
+    // async function raditDatus() {
+    //     let jvards = await vardPecGaruma();
+    //     console.log(jvardi);
+    //     for (let i = 0; i < jvards.length; i++) {
+    //         console.log(jvards[i]["title"])
+    //         //     console.log(jvards[1]);
+    //     }
+    // }
 
-    raditDatus();
+    // raditDatus();
 
 
 
