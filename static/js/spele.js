@@ -66,19 +66,31 @@ function generet() {
     failaNosaukums = "https://normundsb.github.io/burtu_spele/vardi" + izvele + ".json";
     console.log(failaNosaukums)
 
-    fs.readFile(failaNosaukums, (err, data) => {
-        if (err)
-            console.log(err);
-        else {
-            var json = JSON.parse(data);
-            jVards = json
-            //your code using json object
+    async function fetchTest() {
+        let response = await fetch(failaNosaukums);
+        let responseText = await getTextFromStream(response.body);
+
+        document.getElementById('result').innerHTML = responseText;
+    }
+
+    async function getTextFromStream(readableStream) {
+        let reader = readableStream.getReader();
+        let utf8Decoder = new TextDecoder();
+        let nextChunk;
+
+        let resultStr = '';
+
+        while (!(nextChunk = await reader.read()).done) {
+            let partialData = nextChunk.value;
+            resultStr += utf8Decoder.decode(partialData);
         }
-    })
 
+        return resultStr;
+    }
 
-
-
+    (async () => {
+        await fetchTest();
+    })();
 
 
 
