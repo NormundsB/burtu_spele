@@ -1,6 +1,6 @@
 let adrese = window.location.hash
 adrese = decodeURI(adrese)
-adrese = adrese.replace("vards=", ",")
+adrese = adrese.replace("#", "")
 adrese = adrese.split(",")
 let niks = adrese[0]
 
@@ -29,31 +29,31 @@ let failaNosaukums = "";
 function generet() {
     let select = document.getElementById('izvele');
     let izvele = select.options[select.selectedIndex].value;
-    let vardi = [];
+    let vardi = "";
 
 
-    if (izvele == 4) {
-        vardi = vardi4;
-        fvardi = "vardi4";
-    } else if (izvele == 5) {
-        vardi = vardi5;
-        fvardi = "vardi5";
-    } else if (izvele == 6) {
-        vardi = vardi6;
-        fvardi = "vardi6";
-    } else if (izvele == 7) {
-        vardi = vardi7;
-        fvardi = "vardi7";
-    } else if (izvele == 8) {
-        vardi = vardi8;
-        fvardi = "vardi8";
-    } else if (izvele == 9) {
-        vardi = vardi9;
-        fvardi = "vardi9";
-    } else if (izvele == 10) {
-        vardi = vardi10;
-        fvardi = "vardi10";
-    }
+    // if (izvele == 4) {
+    //     vardi = vardi4;
+    //     fvardi = "vardi4";
+    // } else if (izvele == 5) {
+    //     vardi = vardi5;
+    //     fvardi = "vardi5";
+    // } else if (izvele == 6) {
+    //     vardi = vardi6;
+    //     fvardi = "vardi6";
+    // } else if (izvele == 7) {
+    //     vardi = vardi7;
+    //     fvardi = "vardi7";
+    // } else if (izvele == 8) {
+    //     vardi = vardi8;
+    //     fvardi = "vardi8";
+    // } else if (izvele == 9) {
+    //     vardi = vardi9;
+    //     fvardi = "vardi9";
+    // } else if (izvele == 10) {
+    //     vardi = vardi10;
+    //     fvardi = "vardi10";
+    // }
 
 
 
@@ -66,24 +66,15 @@ function generet() {
     failaNosaukums = "https://normundsb.github.io/burtu_spele/vardi" + izvele + ".json";
     console.log(failaNosaukums)
 
-    async function vardPecGaruma() {
-        let datiNoApi = await fetch(failaNosaukums);
-        let datiJson = await datiNoApi.json();
-        // console.log(failaNosaukums)
-        // console.log(datiJson);
-        return datiJson
-    }
-    async function raditDatus() {
-        let jvards = await vardPecGaruma();
-        console.log(jvards);
-        for (let i = 0; i < jvards.length; i++) {
-            console.log(jvards[i])
-
+    fs.readFile(failaNosaukums, (err, data) => {
+        if (err)
+            console.log(err);
+        else {
+            var json = JSON.parse(data);
+            jVards = json
+            //your code using json object
         }
-    }
-
-    raditDatus();
-
+    })
 
 
 
