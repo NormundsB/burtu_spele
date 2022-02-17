@@ -32,28 +32,28 @@ function generet() {
     let vardi = "";
 
 
-    // if (izvele == 4) {
-    //     vardi = vardi4;
-    //     fvardi = "vardi4";
-    // } else if (izvele == 5) {
-    //     vardi = vardi5;
-    //     fvardi = "vardi5";
-    // } else if (izvele == 6) {
-    //     vardi = vardi6;
-    //     fvardi = "vardi6";
-    // } else if (izvele == 7) {
-    //     vardi = vardi7;
-    //     fvardi = "vardi7";
-    // } else if (izvele == 8) {
-    //     vardi = vardi8;
-    //     fvardi = "vardi8";
-    // } else if (izvele == 9) {
-    //     vardi = vardi9;
-    //     fvardi = "vardi9";
-    // } else if (izvele == 10) {
-    //     vardi = vardi10;
-    //     fvardi = "vardi10";
-    // }
+    if (izvele == 4) {
+        vardi = vardi4;
+        fvardi = "vardi4";
+    } else if (izvele == 5) {
+        vardi = vardi5;
+        fvardi = "vardi5";
+    } else if (izvele == 6) {
+        vardi = vardi6;
+        fvardi = "vardi6";
+    } else if (izvele == 7) {
+        vardi = vardi7;
+        fvardi = "vardi7";
+    } else if (izvele == 8) {
+        vardi = vardi8;
+        fvardi = "vardi8";
+    } else if (izvele == 9) {
+        vardi = vardi9;
+        fvardi = "vardi9";
+    } else if (izvele == 10) {
+        vardi = vardi10;
+        fvardi = "vardi10";
+    }
 
 
 
