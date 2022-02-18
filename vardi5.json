@@ -2,39 +2,39 @@
     "vardiFaila": [
         {
             "vards": "kaķis",
-            "hints": ""
+            "hints": "runcis;minka"
         },
         {
             "vards": "kakls",
-            "hints": ""
+            "hints": "rīkle; sauceklis"
         },
         {
             "vards": "kalns",
-            "hints": ""
+            "hints": "kaudze"
         },
         {
             "vards": "kauls",
-            "hints": ""
+            "hints": "skeleta sastāvdaļa"
         },
         {
             "vards": "kļava",
-            "hints": ""
+            "hints": "koks; tā lapa attēlota Kanādas karogā"
         },
         {
             "vards": "krūms",
-            "hints": ""
+            "hints": "cers"
         },
         {
             "vards": "lācis",
-            "hints": ""
+            "hints": "ķepainis"
         },
         {
             "vards": "laiks",
-            "hints": ""
+            "hints": "tas kas mums ir atvēlēts un kura vienmēr ir par maz"
         },
         {
             "vards": "laime",
-            "hints": ""
+            "hints": "nelaime ir kas pretējs šim vārdam"
         },
         {
             "vards": "laiva",
@@ -42,7 +42,7 @@
         },
         {
             "vards": "lapsa",
-            "hints": ""
+            "hints": "meža zvērs, gudrs, ar rudu purnu"
         },
         {
             "vards": "lauks",
@@ -70,11 +70,11 @@
         },
         {
             "vards": "burka",
-            "hints": ""
+            "hints": "iepakojuma veids vecmāmiņas zaptēm"
         },
         {
             "vards": "biete",
-            "hints": ""
+            "hints": "dārzenis; dabūsi pa .....!"
         }
     ]
 }
