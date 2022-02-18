@@ -1,10 +1,36 @@
 {
-    "kartupelis": "",
-    "lakstīgala": "",
-    "varavīksne": "",
-    "basketbols": "",
-    "rakstnieks": "",
-    "Lieldienas": "",
-    "strēlnieks": "",
-    "valodnieks": ""
+    "vardiFaila": [
+        {
+            "vards": "kartupelis",
+            "hints": ""
+        },
+        {
+            "vards": "lakstīgala",
+            "hints": ""
+        },
+        {
+            "vards": "varavīksne",
+            "hints": ""
+        },
+        {
+            "vards": "basketbols",
+            "hints": ""
+        },
+        {
+            "vards": "rakstnieks",
+            "hints": ""
+        },
+        {
+            "vards": "Lieldienas",
+            "hints": ""
+        },
+        {
+            "vards": "strēlnieks",
+            "hints": ""
+        },
+        {
+            "vards": "valodnieks",
+            "hints": ""
+        }
+    ]
 }

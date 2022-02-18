@@ -1,21 +1,80 @@
 {
-    "kaķis": "",
-    "kakls": "",
-    "kalns": "",
-    "kauls": "",
-    "kļava": "",
-    "krūms": "",
-    "lācis": "",
-    "laiks": "",
-    "laime": "",
-    "laiva": "",
-    "lapsa": "",
-    "lauks": "",
-    "liepa": "",
-    "dzīve": "",
-    "ezers": "",
-    "šķēle": "",
-    "žurka": "",
-    "burka": "",
-    "biete": ""
+    "vardiFaila": [
+        {
+            "vards": "kaķis",
+            "hints": ""
+        },
+        {
+            "vards": "kakls",
+            "hints": ""
+        },
+        {
+            "vards": "kalns",
+            "hints": ""
+        },
+        {
+            "vards": "kauls",
+            "hints": ""
+        },
+        {
+            "vards": "kļava",
+            "hints": ""
+        },
+        {
+            "vards": "krūms",
+            "hints": ""
+        },
+        {
+            "vards": "lācis",
+            "hints": ""
+        },
+        {
+            "vards": "laiks",
+            "hints": ""
+        },
+        {
+            "vards": "laime",
+            "hints": ""
+        },
+        {
+            "vards": "laiva",
+            "hints": ""
+        },
+        {
+            "vards": "lapsa",
+            "hints": ""
+        },
+        {
+            "vards": "lauks",
+            "hints": ""
+        },
+        {
+            "vards": "liepa",
+            "hints": ""
+        },
+        {
+            "vards": "dzīve",
+            "hints": ""
+        },
+        {
+            "vards": "ezers",
+            "hints": ""
+        },
+        {
+            "vards": "šķēle",
+            "hints": ""
+        },
+        {
+            "vards": "žurka",
+            "hints": ""
+        },
+        {
+            "vards": "burka",
+            "hints": ""
+        },
+        {
+            "vards": "biete",
+            "hints": ""
+        }
+    ]
 }

@@ -1,13 +1,48 @@
 {
-    "gliemezis": "",
-    "dzirnavas": "",
-    "draudzība": "",
-    "dzejnieks": "",
-    "biezpiens": "",
-    "mīlestība": "",
-    "patiesība": "",
-    "pavasaris": "",
-    "skolotājs": "",
-    "zvejnieks": "",
-    "zvirbulis": ""
+    "vardiFaila": [
+        {
+            "vards": "gliemezis",
+            "hints": ""
+        },
+        {
+            "vards": "dzirnavas",
+            "hints": ""
+        },
+        {
+            "vards": "draudzība",
+            "hints": ""
+        },
+        {
+            "vards": "dzejnieks",
+            "hints": ""
+        },
+        {
+            "vards": "biezpiens",
+            "hints": ""
+        },
+        {
+            "vards": "mīlestība",
+            "hints": ""
+        },
+        {
+            "vards": "patiesība",
+            "hints": ""
+        },
+        {
+            "vards": "pavasaris",
+            "hints": ""
+        },
+        {
+            "vards": "skolotājs",
+            "hints": ""
+        },
+        {
+            "vards": "zvejnieks",
+            "hints": ""
+        },
+        {
+            "vards": "zvirbulis",
+            "hints": ""
+        }
+    ]
 }

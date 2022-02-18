@@ -1,18 +1,68 @@
 {
-    "karogs": "",
-    "kleita": "",
-    "kalējs": "",
-    "komats": "",
-    "krekls": "",
-    "krēsls": "",
-    "kurmis": "",
-    "kurpes": "",
-    "krūtis": "",
-    "labība": "",
-    "lietus": "",
-    "nedēļa": "",
-    "laipns": "",
-    "dibens": "",
-    "zibens": "",
-    "klaips": ""
+    "vardiFaila": [
+        {
+            "vards": "karogs",
+            "hints": ""
+        },
+        {
+            "vards": "kleita",
+            "hints": ""
+        },
+        {
+            "vards": "kalējs",
+            "hints": ""
+        },
+        {
+            "vards": "komats",
+            "hints": ""
+        },
+        {
+            "vards": "krekls",
+            "hints": ""
+        },
+        {
+            "vards": "krēsls",
+            "hints": ""
+        },
+        {
+            "vards": "kurmis",
+            "hints": ""
+        },
+        {
+            "vards": "kurpes",
+            "hints": ""
+        },
+        {
+            "vards": "krūtis",
+            "hints": ""
+        },
+        {
+            "vards": "labība",
+            "hints": ""
+        },
+        {
+            "vards": "lietus",
+            "hints": ""
+        },
+        {
+            "vards": "nedēļa",
+            "hints": ""
+        },
+        {
+            "vards": "laipns",
+            "hints": ""
+        },
+        {
+            "vards": "dibens",
+            "hints": ""
+        },
+        {
+            "vards": "zibens",
+            "hints": ""
+        },
+        {
+            "vards": "klaips",
+            "hints": ""
+        }
+    ]
 }

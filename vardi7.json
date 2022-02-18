@@ -1,15 +1,56 @@
 {
-    "Kurzeme": "",
-    "Latgale": "",
-    "Vidzeme": "",
-    "Zemgale": "",
-    "nākotne": "",
-    "pasaule": "",
-    "pirksts": "",
-    "pērkons": "",
-    "pilsēta": "",
-    "rietumi": "",
-    "smiltis": "",
-    "sudrabs": "",
-    "kadiķis": ""
+    "vardiFaila": [
+        {
+            "vards": "Kurzeme",
+            "hints": ""
+        },
+        {
+            "vards": "Latgale",
+            "hints": ""
+        },
+        {
+            "vards": "Vidzeme",
+            "hints": ""
+        },
+        {
+            "vards": "Zemgale",
+            "hints": ""
+        },
+        {
+            "vards": "nākotne",
+            "hints": ""
+        },
+        {
+            "vards": "pasaule",
+            "hints": ""
+        },
+        {
+            "vards": "pirksts",
+            "hints": ""
+        },
+        {
+            "vards": "pērkons",
+            "hints": ""
+        },
+        {
+            "vards": "pilsēta",
+            "hints": ""
+        },
+        {
+            "vards": "rietumi",
+            "hints": ""
+        },
+        {
+            "vards": "smiltis",
+            "hints": ""
+        },
+        {
+            "vards": "sudrabs",
+            "hints": ""
+        },
+        {
+            "vards": "kadiķis",
+            "hints": ""
+        }
+    ]
 }

@@ -1,14 +1,52 @@
 {
-    "kukainis": "",
-    "liktenis": "",
-    "pīlādzis": "",
-    "taurenis": "",
-    "uzdevums": "",
-    "vecāmāte": "",
-    "zīdainis": "",
-    "zemnieks": "",
-    "zvaigzne": "",
-    "folklora": "",
-    "dzimtene": "",
-    "dzeltens": ""
+    "vardiFaila": [
+        {
+            "vards": "kukainis",
+            "hints": ""
+        },
+        {
+            "vards": "liktenis",
+            "hints": ""
+        },
+        {
+            "vards": "pīlādzis",
+            "hints": ""
+        },
+        {
+            "vards": "taurenis",
+            "hints": ""
+        },
+        {
+            "vards": "uzdevums",
+            "hints": ""
+        },
+        {
+            "vards": "vecāmāte",
+            "hints": ""
+        },
+        {
+            "vards": "zīdainis",
+            "hints": ""
+        },
+        {
+            "vards": "zemnieks",
+            "hints": ""
+        },
+        {
+            "vards": "zvaigzne",
+            "hints": ""
+        },
+        {
+            "vards": "folklora",
+            "hints": ""
+        },
+        {
+            "vards": "dzimtene",
+            "hints": ""
+        },
+        {
+            "vards": "dzeltens",
+            "hints": ""
+        }
+    ]
 }
