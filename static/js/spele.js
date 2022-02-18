@@ -4,7 +4,7 @@ adrese = adrese.replace("#", "")
 adrese = adrese.split(",")
 let niks = adrese[0]
 
-
+let ienakosaisJiksons = "";
 document.querySelector(".virsraksts").innerHTML = niks + " - spēle sākas!"
 console.log(adrese)
 
@@ -69,7 +69,8 @@ function generet() {
     async function fetchTest() {
         let response = await fetch(failaNosaukums);
         let responseText = await getTextFromStream(response.body);
-
+        console.log(responseText);
+        ienakosaisJiksons = responseText;
         document.getElementById('result').innerHTML = responseText;
     }
 
