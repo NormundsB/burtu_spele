@@ -30,7 +30,7 @@ function generet() {
     let select = document.getElementById('izvele');
     let izvele = select.options[select.selectedIndex].value;
     let vardi = "";
-
+    let vvd = ""
 
     if (izvele == 4) {
         vardi = vardi4;
@@ -84,7 +84,6 @@ function generet() {
 
         const obj = JSON.parse(ienakosaisJiksons);
         document.getElementById("result").innerHTML = obj.vardiFaila[randomNr].vards + " " + obj.vardiFaila[randomNr].hints;
-
         //document.getElementById('result').innerHTML = responseText;
     }
 
