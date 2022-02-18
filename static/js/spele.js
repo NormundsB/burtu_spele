@@ -71,7 +71,11 @@ function generet() {
         let responseText = await getTextFromStream(response.body);
         console.log(responseText);
         ienakosaisJiksons = responseText;
-        document.getElementById('result').innerHTML = responseText;
+
+        const obj = JSON.parse(ienakosaisJiksons);
+        document.getElementById("result").innerHTML = obj.vardiFaila[1].vards + " " + obj.vardiFaila[1].hints;
+
+        //document.getElementById('result').innerHTML = responseText;
     }
 
     async function getTextFromStream(readableStream) {

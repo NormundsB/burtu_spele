@@ -1,26 +1,100 @@
 {
-    "koks": "garš veidojums mežā ar lapām, vai skujām",
-    "kāja": "ķermeņa ekstrmitāte ar kuru spēlē futbolu",
-    "labs": "peretējs jēdziens slikts",
-    "lini": "",
-    "logs": "",
-    "daba": "",
-    "dēls": "",
-    "egle": "",
-    "ezis": "",
-    "gads": "",
-    "gods": "",
-    "govs": "",
-    "dēle": "",
-    "kaza": "",
-    "maza": "",
-    "ķeza": "",
-    "roka": "",
-    "alus": "",
-    "māsa": "",
-    "māte": "",
-    "tēvs": "",
-    "kaps": "",
-    "āzis": "",
-    "pupa": ""
+    "vardiFaila": [
+        {
+            "vards": "koks",
+            "hints": "garš veidojums mežā ar lapām, vai skujām"
+        },
+        {
+            "vards": "kāja",
+            "hints": "ķermeņa ekstrmitāte ar kuru spēlē futbolu"
+        },
+        {
+            "vards": "labs",
+            "hints": "peretējs jēdziens slikts"
+        },
+        {
+            "vards": "lini",
+            "hints": ""
+        },
+        {
+            "vards": "logs",
+            "hints": ""
+        },
+        {
+            "vards": "daba",
+            "hints": ""
+        },
+        {
+            "vards": "dēls",
+            "hints": ""
+        },
+        {
+            "vards": "egle",
+            "hints": ""
+        },
+        {
+            "vards": "ezis",
+            "hints": ""
+        },
+        {
+            "vards": "gads",
+            "hints": ""
+        },
+        {
+            "vards": "gods",
+            "hints": ""
+        },
+        {
+            "vards": "govs",
+            "hints": ""
+        },
+        {
+            "vards": "dēle",
+            "hints": ""
+        },
+        {
+            "vards": "kaza",
+            "hints": ""
+        },
+        {
+            "vards": "maza",
+            "hints": ""
+        },
+        {
+            "vards": "ķeza",
+            "hints": ""
+        },
+        {
+            "vards": "roka",
+            "hints": ""
+        },
+        {
+            "vards": "alus",
+            "hints": ""
+        },
+        {
+            "vards": "māsa",
+            "hints": ""
+        },
+        {
+            "vards": "māte",
+            "hints": ""
+        },
+        {
+            "vards": "tēvs",
+            "hints": ""
+        },
+        {
+            "vards": "kaps",
+            "hints": ""
+        },
+        {
+            "vards": "āzis",
+            "hints": ""
+        },
+        {
+            "vards": "pupa",
+            "hints": ""
+        }
+    ]
 }
