@@ -54,9 +54,19 @@ function generet() {
         vardi = vardi10;
         fvardi = "vardi10";
     }
+    // šis ir no apakšas
+
+    let randomNr = getRandomInt(vardi.length - 1);
 
 
+    vards = vardi[randomNr];
 
+    while (ieprVards == vards && ieprVards2 == vards && ieprVards3 == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
+        randomNr = getRandomInt(vardi.length - 1);
+        vards = vardi[randomNr];;
+    }
+
+    // šis ir no apakšas
 
     // 
 
@@ -69,11 +79,11 @@ function generet() {
     async function fetchTest() {
         let response = await fetch(failaNosaukums);
         let responseText = await getTextFromStream(response.body);
-        console.log(responseText);
+
         ienakosaisJiksons = responseText;
 
         const obj = JSON.parse(ienakosaisJiksons);
-        document.getElementById("result").innerHTML = obj.vardiFaila[1].vards + " " + obj.vardiFaila[1].hints;
+        document.getElementById("result").innerHTML = obj.vardiFaila[randomNr].vards + " " + obj.vardiFaila[randomNr].hints;
 
         //document.getElementById('result').innerHTML = responseText;
     }
@@ -102,15 +112,8 @@ function generet() {
     // Šeit beidzas ielāde
     spelesLaukums();
 
-    let randomNr = getRandomInt(vardi.length - 1);
-
-    vards = vardi[randomNr];
-
-    while (ieprVards == vards && ieprVards2 == vards && ieprVards3 == vards) { //Ja iepriekšējais minētais vārds sakrīt ar šo
-        randomNr = getRandomInt(vardi.length - 1);
-        vards = vardi[randomNr];;
-    }
-
+    // let randomNr = getRandomInt(vardi.length - 1);
+    // random šeit
     vards2 = sajaukt(vards);
 
     while (vards2 == vards) { // Ja sajauktais vārds sakrīt ar minamo vārdu
