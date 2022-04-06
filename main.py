@@ -1,5 +1,6 @@
 from flask import Flask, render_template, jsonify, request
 import json
+import sqlite3
 
 app = Flask('app')
 
@@ -30,6 +31,32 @@ def kontakti():
 @app.route('/spele')
 def spele():
   return render_template("spele.html")
+
+@app.route('/vardi/<skaits>')
+def vardi(skaits):
+  DB = sqlite3.connect("dati.db")
+  SQL = DB.cursor()
+
+  SQL.execute(f"SELECT * FROM vardi WHERE length(vards) = {skaits}")
+  rezultati = SQL.fetchall()
+  
+  dati = []
+
+  for ieraksts in rezultati:
+    dati.append({"vards":ieraksts[1], "hints":ieraksts[2]})
+
+  datiJson = jsonify(dati)
+  return datiJson
+
+@app.route('/parbauditDB')
+def parbauditDB():
+  DB = sqlite3.connect("dati.db")
+  SQL = DB.cursor()
+
+  SQL.execute("SELECT * FROM vardi")
+  rezultati = SQL.fetchall()
+  print(rezultati)
+  return "pagaidi"
 
 # @app.route('/spele')
 # def spele():

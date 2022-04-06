@@ -8,8 +8,6 @@ let ienakosaisJiksons = "";
 document.querySelector(".virsraksts").innerHTML = niks + " - spēle sākas!"
 console.log(adrese)
 
-
-
 let vards = "";
 let vards2 = "";
 
@@ -73,7 +71,7 @@ function generet() {
 
     // Šeit ielādējam datus no vardu faila
 
-    failaNosaukums = "https://normundsb.github.io/burtu_spele/vardi" + izvele + ".json";
+    failaNosaukums = "https://normundsb.github.io/burtu_spele/dati/vardi" + izvele + ".json";
     console.log(failaNosaukums)
 
     async function fetchTest() {
