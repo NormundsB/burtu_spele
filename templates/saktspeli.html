@@ -1,0 +1,26 @@
+{% extends "layout.html" %}
+
+{% block saturs %}
+<p class="solid"></p>
+<div class="content">
+    <h3 id="section5">Lai sāktu spēlēt ievadi savu vārdu, vai <i>nickname</i>:</h3>
+    <h3>Vārds (nick) : <input id="niks" /> <a class="btn" onclick="saktSpeli()">Sākt spēli</a></h3>
+
+    <p class="thin"></p>
+
+</div>
+{% endblock %}
+
+{% block skripti %}
+<script>
+    function saktSpeli() {
+        let niks = document.querySelector("#niks").value;
+        console.log(niks)
+        if (niks == "") {
+            alert("Ievadi vārdu, vai nickname!")
+        } else {
+            window.location = "spele#" + niks
+        }
+    } //beidzas saktSpeli()
+</script>
+{% endblock %}

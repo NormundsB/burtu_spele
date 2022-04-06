@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <link href="static/css/style.css" rel="stylesheet" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Burtu Spēle</title>
+</head>
+
+<body>
+    <div class="wrapper">
+        <h1>
+            <a href="/">
+                <!-- Šeit lai varētu atgriezties! -->
+                Burtu Spēle
+            </a>
+        </h1>
+        <h2>
+            <nav role="navigation" aria-label="main menu">
+                <ul class="navbar">
+
+                    <li><a href="noteikumi">Noteikumi</a></li>
+                    <li><a href="rekordisti">Rekordisti</a></li>
+                    <li><a href="parstartit">Par Start-it</a></li>
+                    <li><a href="kontakti">Kontakti</a></li>
+                </ul>
+            </nav>
+        </h2>
+    
+        {% block saturs %}
+
+        {% endblock %}
+
+    </div>
+
+  
+    {% block skripti %}
+
+    {% endblock %}
+   
+</body>
+</html>

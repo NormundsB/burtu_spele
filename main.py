@@ -1,5 +1,4 @@
 from flask import Flask, render_template, jsonify, request
-import datubaze
 import json
 
 app = Flask('app')
@@ -7,6 +6,30 @@ app = Flask('app')
 @app.route('/')
 def index():
   return render_template("index.html")
+
+@app.route('/noteikumi')
+def noteikumi():
+  return render_template("noteikumi.html")
+
+@app.route('/saktspeli')
+def saktspeli():
+  return render_template("saktspeli.html")  
+
+@app.route('/rekordisti')
+def rekordisti():
+  return render_template("rekordisti.html")
+
+@app.route('/parstartit')
+def parstartit():
+  return render_template("parstartit.html")  
+
+@app.route('/kontakti')
+def kontakti():
+  return render_template("kontakti.html")
+
+@app.route('/spele')
+def spele():
+  return render_template("spele.html")
 
 # @app.route('/spele')
 # def spele():
@@ -56,4 +79,4 @@ def index():
 #   else:
 #     return "Kā tu te tiki?"
 
-# app.run(host='0.0.0.0', port=8080)
+app.run(host='0.0.0.0', port=8080)

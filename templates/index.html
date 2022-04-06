@@ -1,0 +1,39 @@
+{% extends "layout.html" %}
+
+{% block saturs %}
+<h3 id="section1">Par spēli:</h3>
+Šī spēle ir izveidota, lai attīstītu domāšanu, un paplašinātu <br>
+spēlētājam zināmo vārdu krājumu ar jauniem vārdiem.<br>
+Spēlē izmantojamo vārdu izvēle šobrīd ir haotiska, bet to<br>
+ir iespējams piemērot izglītības programai piem.
+</p>
+<ul>
+    <li>Literatūrā - rakstnieki, darbu nosaukumi</li>
+    <li>Ķīmijā - elementu nosaukumi un to savienojumi</li>
+    <li>Svešvalodā - vārdi pēc to nozīmes</li>
+    <li>utt.</li>
+</ul>
+<p>
+    Lai piemērotu spēli konkrētām vajadzībām - skolotājam, <br> vai spēles
+    īpašniekam ir jānomaina CSV ar nepieciešamo. <br>
+    CSV fails satur sekojošus laukus:
+</p>
+<ol>
+    <li>Vārds - tāds kādu to jātmin</li>
+    <li>Vārda garums - burtu skaits vārdā</li>
+    <li>Hint - īsa palīdzība, kura pieskaita spēles laikam 1 min.</li>
+    <li>Vārda pilnā nozīme</li>
+</ol>
+<h3>Lai sāktu spēli nospied šo pogu:
+    <a class="btn" href="/saktspeli">Reģistrēties</a>
+</h3>
+
+<p class="solid"></p>
+<h3 id="section3">Par Start (IT) ...</h3>
+<div id="mans">IT Izglītības fonda projekta Start(IT) <br>mērķis ir attīstīt digitālās prasmes
+    Latvijā</div>
+<h3 id="section4">Kontakti...</h3>
+<div id="mans">Jautājumiem un sadarbības piedāvājumiem<br>
+    E-pasts: fonds@startit.lv
+</div>
+{% endblock %}
