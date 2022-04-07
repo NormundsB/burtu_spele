@@ -1,45 +1,98 @@
 from flask import Flask, render_template, jsonify, request
 import json
 import sqlite3
+import random
 
 app = Flask('app')
-
 
 @app.route('/')
 def index():
     return render_template("index.html")
 
-
 @app.route('/noteikumi')
 def noteikumi():
     return render_template("noteikumi.html")
-
 
 @app.route('/saktspeli')
 def saktspeli():
     return render_template("saktspeli.html")
 
-
 @app.route('/rekordisti')
 def rekordisti():
     return render_template("rekordisti.html")
-
 
 @app.route('/parstartit')
 def parstartit():
     return render_template("parstartit.html")
 
-
 @app.route('/kontakti')
 def kontakti():
     return render_template("kontakti.html")
-
 
 @app.route('/spele')
 def spele():
     return render_template("spele.html")
 
+@app.route('/generet/<niks>/<skaits>')
+def generet(niks, skaits):
+    DB = sqlite3.connect("dati.db")
+    SQL = DB.cursor()
 
+    SQL.execute(f"SELECT * FROM vardi WHERE length(vards) = {skaits}")
+    vardi = SQL.fetchall()
+
+    randomSkaitlis = random.randint(0, len(vardi) - 1)
+    minejums = vardi[randomSkaitlis][1]
+    hints =  vardi[randomSkaitlis][2]
+
+    niks = niks.capitalize()
+
+    SQL.execute(f"SELECT * FROM speletaji WHERE vards = '{niks}'")
+    speletajs = SQL.fetchall()
+
+    if len(speletajs) != 0:
+        print("Mēģinat updeitot!")
+        SQL.execute(f"UPDATE speletaji SET minejums = '{minejums}' WHERE vards = '{niks}' ")
+    else:
+        print("Mēģinat ievietot!")
+        SQL.execute("INSERT INTO speletaji (vards, minejums, rezultats) VALUES (:vards, :minejums, :rezultats)",
+        {'vards':niks, 'minejums':minejums, 'rezultats':0})
+
+    DB.commit()
+
+    minejums = list(minejums)
+    random.shuffle(minejums)
+    minejums = "".join(minejums)
+
+    return {"vards":minejums, "hints":hints}
+
+@app.route('/parbaudit/<niks>/<vards>')
+def parbaudit(niks, vards):
+    DB = sqlite3.connect("dati.db")
+    SQL = DB.cursor()
+
+    niks = niks.capitalize()
+    vards = vards.lower()
+
+    SQL.execute(f"SELECT * FROM speletaji WHERE vards = '{niks}' LIMIT 1")
+    speletajs = SQL.fetchall()
+
+    if speletajs[0][2] == vards:
+        rezultats = speletajs[0][3] + 1
+        SQL.execute(f"UPDATE speletaji SET rezultats = '{rezultats}', minejums = NULL WHERE vards = '{niks}' ")
+        DB.commit()
+        atbilde = "Super apsveicam!"
+        return {"rezultats":atbilde, "status":1}
+    else:
+        atbilde = "Mēģini vēlreiz!"
+        return {"rezultats":atbilde, "status":0}
+
+    
+
+
+
+
+# Sis netiek lietots
 @app.route('/vardi/<skaits>')
 def vardi(skaits):
     DB = sqlite3.connect("dati.db")
@@ -56,7 +109,7 @@ def vardi(skaits):
     datiJson = jsonify(dati)
     return datiJson
 
-
+# Sis netiek lietots
 @app.route('/parbauditDB')
 def parbauditDB():
     DB = sqlite3.connect("dati.db")
@@ -67,42 +120,4 @@ def parbauditDB():
     print(rezultati)
     return "pagaidi"
 
-
-# @app.route('/spele')
-# def spele():
-#   return render_template("spele.html")
-# @app.route('/pspele')
-# def pspele():
-#   return render_template("pspele.html")
-# @app.route('/top')
-# def top():
-#   return render_template("top.html")
-# @app.route('/topData')
-# def topData():
-#   data = datubaze.top()
-#   return jsonify(data)
-# @app.route('/postTop', methods=['POST'])
-# def postTop(dati):
-#   datiJson = json.loads(dati)
-#   datubaze.pievienot(datiJson)
-#   return "OK"
-# @app.route('/par')
-# def par():
-#   return render_template("par.html")
-# @app.route('/demo')
-# def demo():
-#   return render_template("demo.html")
-# @app.route('/demoPoga', methods=['POST', 'GET'])
-# def demoPoga():
-#   if request.method == "GET":
-#     with open("dati.txt", "r", encoding="utf-8") as f:
-#       dati = f.read()
-#     return dati
-#   elif request.method == "POST":
-#     ievade = request.json
-#     with open("dati.txt", "a", encoding="utf-8") as f:
-#       f.write(f"{ievade['datiY']}\n")
-#     return "OK"
-#   else:
-#     return "Kā tu te tiki?"
-app.run(host='0.0.0.0', port=8080)
+app.run(host='0.0.0.0', port=8080, debug=True)

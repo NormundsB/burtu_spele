@@ -11,15 +11,23 @@ SQL.execute(""" CREATE TABLE IF NOT EXISTS vardi (
     PRIMARY KEY ("id" AUTOINCREMENT)
 )  """)
 
-for i in range(4, 11):
-    with open(f"dati/vardi{i}.json", "r", encoding="utf-8") as f:
-        dati = f.read()
-        datiJson = json.loads(dati)
+SQL.execute(""" CREATE TABLE IF NOT EXISTS speletaji (
+    id INTEGER NOT NULL UNIQUE,
+    vards TEXT,
+    minejums TEXT,
+    rezultats INTEGER,
+    PRIMARY KEY ("id" AUTOINCREMENT)
+)  """)
 
-    for ieraksts in datiJson['vardiFaila']:
-        SQL.execute("INSERT INTO vardi (vards, hint) VALUES (:vards, :hint)", 
-        {'vards':ieraksts['vards'], 'hint':ieraksts['hints']})
-        print("Veicam ierakstu!")
+# for i in range(4, 11):
+#     with open(f"dati/vardi{i}.json", "r", encoding="utf-8") as f:
+#         dati = f.read()
+#         datiJson = json.loads(dati)
+
+#     for ieraksts in datiJson['vardiFaila']:
+#         SQL.execute("INSERT INTO vardi (vards, hint) VALUES (:vards, :hint)", 
+#         {'vards':ieraksts['vards'], 'hint':ieraksts['hints']})
+#         print("Veicam ierakstu!")
 
 
 DB.commit()
