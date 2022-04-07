@@ -71,7 +71,7 @@ function generet() {
 
     // Šeit ielādējam datus no vardu faila
 
-    failaNosaukums = "https://normundsb.github.io/burtu_spele/dati/vardi" + izvele + ".json";
+    failaNosaukums = "/vardi/" + izvele;
     console.log(failaNosaukums)
 
     async function fetchTest() {
