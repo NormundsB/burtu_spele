@@ -1,37 +1,39 @@
 html {
-    font-family: avenir;
-    /* line-height: 1.1; */
-    margin-left: 2px;
-  }  
-
-  
-h1 {   
-    color: rebeccapurple;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    text-align: left;
-    font-size: 2.3rem;
-    margin-top: -2px;
-    margin-bottom: -14px;
-    
-    
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  font-family: avenir;
+  /* line-height: 1.1; */
+  margin-left: 2px;
 }
+
+
+h1 {
+  color: rebeccapurple;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  text-align: left;
+  font-size: 2.3rem;
+  margin-top: -2px;
+  margin-bottom: -14px;
+
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 h3 {
   color: rebeccapurple;
 }
+
 #pulkstenis {
   color: #F7FFF7;
   background: rebeccapurple;
@@ -40,51 +42,63 @@ h3 {
   text-decoration: none;
   padding: 2px 6px;
   border-radius: 4px;
-  
+
 }
-#generet, #izvele, #taimeris, #parb{
-    color: #F7FFF7;
-    background: rebeccapurple;
-    text-decoration: none;
-    padding: 2px 6px;
-    border-radius: 4px;
-    
-  }
-#generet:hover ,#izvele:hover, #taimeris:hover, #parb:hover{
-    background: rgba(47, 48, 97, 50%);
-  }
+
+#generet,
+#izvele,
+#taimeris,
+#parb {
+  color: #F7FFF7;
+  background: rebeccapurple;
+  text-decoration: none;
+  padding: 2px 6px;
+  border-radius: 4px;
+
+}
+
+#generet:hover,
+#izvele:hover,
+#taimeris:hover,
+#parb:hover {
+  background: rgba(47, 48, 97, 50%);
+}
 
 p.solid {
-    border-style: groove;
-    border-color: rebeccapurple;
-    border-width: 2px 0px  0px  0px;
-    width: 444px;
-}
-p.thin {
-  border-style:dashed;
+  border-style: groove;
   border-color: rebeccapurple;
-  border-width: 2px 0px  0px  0px;
+  border-width: 2px 0px 0px 0px;
   width: 444px;
 }
-#vards {
-    color: rebeccapurple;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    text-align: left;
-    font-size: 3rem;
-    margin-top: -2px;
-    margin-bottom: -14px;
- 
+
+p.thin {
+  border-style: dashed;
+  border-color: rebeccapurple;
+  border-width: 2px 0px 0px 0px;
+  width: 444px;
 }
-#atbilde {
-    color: rebeccapurple;
-    background: white;
-    font-size: 2.3rem;
-    font-weight:bolder;
-    text-decoration: none;
-    padding: 4px 8px;
-    border-radius: 4px;
+
+#vards {
+  color: rebeccapurple;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  text-align: left;
+  font-size: 3rem;
+  margin-top: -2px;
+  margin-bottom: -14px;
 
 }
+
+#atbilde {
+  color: rebeccapurple;
+  background: white;
+  font-size: 2.3rem;
+  font-weight: bolder;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+
+}
+
 .navbar {
   display: flex;
   flex-wrap: wrap;
@@ -92,20 +106,23 @@ p.thin {
   gap: 1rem;
   padding: 0.25em 0;
 }
+
 .navbar li {
-  display: block; 
+  display: block;
 }
+
 .navbar a {
   text-decoration: none;
   color: rebeccapurple;
 }
+
 .navbar a:hover {
   text-decoration: underline;
   text-decoration-color: orange;
   text-decoration-thickness: 3px;
   text-underline-offset: 6px;
 }
- 
+
 .btn {
   color: #F7FFF7;
   background: rebeccapurple;
@@ -113,9 +130,27 @@ p.thin {
   text-decoration: none;
   padding: 2px 6px;
   border-radius: 4px;
-  
+
 }
+
 .btn:hover {
   background: rgba(47, 48, 97, 50%);
 }
 
+#myProgress {
+  font-family: avenir;
+  font-weight: bolder;
+  width: 600px;
+  background-color: #ddd;
+  border-radius: 4px;
+}
+
+#myBar {
+  color: #F7FFF7;
+  background: rebeccapurple;
+  width: 10px;
+  text-align: center;
+  text-decoration: none;
+  padding: 6px 6px;
+  border-radius: 4px;
+}
