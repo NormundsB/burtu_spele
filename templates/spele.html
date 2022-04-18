@@ -28,7 +28,7 @@
         <h3><a id="pulkstenis"></a> <a id="taimeris" onclick="move()">Spēlēt ar laika limitu!</a>
             <br\>
                 <div id="myProgress">
-                    <div id="myBar"></div>
+                    <div id="myBar">1%</div>
                 </div>
 
         </h3>
@@ -83,10 +83,11 @@
                         if (width >= 100) {
                             clearInterval(id);
                             i = 0;
+                            alert('Tava spēle ir beigusies!');
                         } else {
                             width++;
-                            elem.style.width = width + " ";
-                            elem.innerHTML = width + " ";
+                            elem.style.width = width + "%";
+                            elem.innerHTML = width + "%";
                         }
                     }
                 }

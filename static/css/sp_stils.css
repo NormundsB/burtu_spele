@@ -143,6 +143,7 @@ p.thin {
   width: 450px;
   background-color: #ddd;
   border-radius: 4px;
+  margin-top: 12px;
 }
 
 #myBar {
