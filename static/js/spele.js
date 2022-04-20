@@ -75,6 +75,7 @@ function move() {
                 clearInterval(id);
                 i = 0;
                 alert('Tava spēle ir beigusies!');
+                window.location = "/rekordisti";
             } else {
                 width++;
                 elem.style.width = width + "%";
