@@ -1,106 +1,117 @@
-
 html {
-    font-family: avenir;
-    /* line-height: 1.5; */
-    margin-left: 2px;
-  }  
-
-  
-  
-h1{   
-    color: rebeccapurple;
-    /* font-family: Arial, Helvetica, sans-serif; */
-    text-align: left;
-    font-size: 3rem;
-    margin-top: -2px;
-    margin-bottom: -14px;
-    
-    
-    animation-duration: 3s;
-    animation-name: slidein;
-  }
-  
-  @keyframes slidein {
-    from {
-      margin-left: 100%;
-      width: 300%;
-    }
-  
-    to {
-      margin-left: 0%;
-      width: 100%;
-    }
+  font-family: avenir;
+  /* line-height: 1.5; */
+  margin-left: 2px;
 }
+
+
+
+h1 {
+  color: rebeccapurple;
+  /* font-family: Arial, Helvetica, sans-serif; */
+  text-align: left;
+  font-size: 3rem;
+  margin-top: -2px;
+  margin-bottom: -14px;
+
+
+  animation-duration: 3s;
+  animation-name: slidein;
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
+
 h3 {
   color: rebeccapurple;
 }
-.virsraksts{
+
+.virsraksts {
   color: rebeccapurple;
   font-size: 1.25rem;
-  font-weight:bolder; 
+  font-weight: bolder;
 }
 
 
 .navbar {
-    display: flex;
-    flex-wrap: wrap;
-    width: max-content;
-    gap: 1rem;
-    border: 4px solid rebeccapurple;
-    margin: 0em 0;
-    padding: 0.25em 0.5em;
-  }
-  .navbar li {
-    display: block; 
-  }
-  .navbar a {
-    text-decoration: none;
-    color: blackrebeccapurple;
-  }
-  .navbar a:hover {
-    text-decoration: underline;
-    text-decoration-color: orange;
-    text-decoration-thickness: 3px;
-    text-underline-offset: 6px;
-  }
-  /* .navbar .active {
+  display: flex;
+  flex-wrap: wrap;
+  width: max-content;
+  gap: 1rem;
+  border: 4px solid rebeccapurple;
+  margin: 0em 0;
+  padding: 0.25em 0.5em;
+}
+
+.navbar li {
+  display: block;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: blackrebeccapurple;
+}
+
+.navbar a:hover {
+  text-decoration: underline;
+  text-decoration-color: orange;
+  text-decoration-thickness: 3px;
+  text-underline-offset: 6px;
+}
+
+/* .navbar .active {
     text-decoration: underline;
     text-decoration-color: orange;
     text-decoration-thickness: 3px;
     text-underline-offset: 6px;
   } */
-   
+
 .btn {
-    color: #F7FFF7;
-    background: rebeccapurple;
-    text-decoration: none;
-    padding: 4px 8px;
-    border-radius: 4px;
-    
-  }
-  .btn:hover {
-    background: rgba(47, 48, 97, 50%);
-  }
-  #niks, #vards,#vecums {
-    color: rebeccapurple;
-    background: white;
-    font-size: 1.25rem;
-    font-weight:bolder;
-    text-decoration: none;
-    width: 150px;
-    padding: 4px 8px;
-    border-radius: 4px;
-  }
-  p.solid {
-    border-style: groove;
-    border-color: rebeccapurple;
-    border-width: 2px 0px  0px  0px;
-    width: 525px;
+  color: #F7FFF7;
+  background: rebeccapurple;
+  text-decoration: none;
+  padding: 4px 8px;
+  border-radius: 4px;
+
 }
-p.thin {
-  border-style:dashed;
+
+.btn:hover {
+  background: rgba(47, 48, 97, 50%);
+}
+
+#niks,
+#vards,
+#vecums {
+  color: rebeccapurple;
+  background: white;
+  font-size: 1.25rem;
+  font-weight: bolder;
+  text-decoration: none;
+  width: 150px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+p.solid {
+  border-style: groove;
   border-color: rebeccapurple;
-  border-width: 2px 0px  0px  0px;
+  border-width: 2px 0px 0px 0px;
+  width: 525px;
+}
+
+p.thin {
+  border-style: dashed;
+  border-color: rebeccapurple;
+  border-width: 2px 0px 0px 0px;
   width: 525px;
 }
 
@@ -111,17 +122,21 @@ p.thin {
 } */
 
 #mans {
-  visibility:visible;
+  visibility: visible;
   width: 480px;
   background-color: rebeccapurple;
   color: #fff;
   text-align: center;
   border-radius: 6px;
   padding: 5px 0;
-  
+
   /* Position the tooltip */
   position: absolute;
   z-index: auto;
   top: auto;
   left: auto;
+}
+
+#section2>li:nth-child(odd) {
+  background-color: #f1f1f1;
 }
